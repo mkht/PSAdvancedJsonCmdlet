@@ -36,9 +36,9 @@ These commands are based on PowerShell 7.3 source code, but are not exactly the 
 For example, the PowerShell 7.3 uses `Newtonsoft.Json 13.0.2`, but this module uses `Newtonsoft.Json 12.0.3`.
 
 ### AsHashTable returns `[OrderedHashtable]` type of object
-`ConvertFrom-Json -AsHashtable` returns `[OrderedHashtable]`. This is the same behavior as in PS 7.3, but different from 7.2 and earlier. `[OrderedHashtable]` is not a built-in type of Windows PowerShell, it is also backported.  
+`ConvertFrom-Json -AsHashtable` returns an `[OrderedHashtable]`. This is the same behavior as in PS 7.3, but different from 7.2 and earlier. `[OrderedHashtable]` is not a built-in type of Windows PowerShell, and it is also backported.  
 
-It is not compatible with `[System.Collections.Specialized.OrderedDictionary]`, which is commonly used in Windows PowerShell. You can clone `[OrderedHashtable]` to `[OrderedDictionary]` with the following code.
+It is not compatible with `[System.Collections.Specialized.OrderedDictionary]` that is commonly used in Windows PowerShell. The following code can be used to clone `[OrderedHashtable]` to `[OrderedDictionary]`.
 
 ```PowerShell
 # $hash is [OrderedHashtable]
