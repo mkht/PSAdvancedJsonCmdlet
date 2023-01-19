@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "PowerShell Interactive Session",
+            "type": "PowerShell",
+            "request": "launch",
+            "cwd": "${cwd}"
+        },
+        {
             "name": "PowerShell cmdlets: powershell",
             "type": "clr",
             "request": "launch",
@@ -14,7 +20,7 @@
                 "-NoExit",
                 "-NoProfile",
                 "-Command",
-                "Import-Module ${workspaceFolder}/bin/Debug/net472/mymodule.dll",
+                "Import-Module ${workspaceFolder}/bin/PSAdvancedJsonCmdlet.dll",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
