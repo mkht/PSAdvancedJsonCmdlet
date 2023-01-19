@@ -1,5 +1,9 @@
+// Original code:
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
+// https://github.com/PowerShell/PowerShell/blob/94610307572edc7656e22bc3f5d45d57751e9f13/src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet/ConvertToJsonCommand.cs
+
+// Modified by mkht.
 
 using System;
 using System.Collections.Generic;

@@ -55,3 +55,11 @@ foreach ($item in $hash.GetEnumerator()) {
 
 ## Release
 * Not Released
+
+
+
+## License
+MIT License
+
+Some code is forked from [PowerShell/PowerShell](https://github.com/PowerShell/PowerShell).  
+PowerShell is licensed under the [MIT License](https://github.com/PowerShell/PowerShell/blob/94610307572edc7656e22bc3f5d45d57751e9f13/LICENSE.txt).
