@@ -8,20 +8,17 @@ This module provides two cmdlets for JSON serializer and deserializer.
 
 These cmdlets are backported from modern PowerShell 7.3 to legacy Windows PowerShell 5.1. 
 
-----
 ## Supported Platforms
 * Windows PowerShell 5.1
 
 > This module may also work with PowerShell 7 or higher. (only on Windows)  
 > But not useful because it has better built-in cmdlets.
 
-----
 ## Install
 Install from PowerShellGallery
 ```PowerShell
 Install-Module -Name PSAdvancedJsonCmdlet
 ```
-----
 ## Usage
 See docs by Microsoft.  
 These have same parameters, same outputs, same usage.
@@ -32,7 +29,6 @@ https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility
 ### ConvertTo-AdvancedJson
 https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertto-json?view=powershell-7.3
 
-----
 ## Notes
 
 ### Not a complete backport
@@ -57,6 +53,5 @@ foreach ($item in $hash.GetEnumerator()) {
 }
 ```
 
-----
 ## Release
 * Not Released
