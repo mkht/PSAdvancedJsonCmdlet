@@ -54,7 +54,7 @@ foreach ($item in $hash.GetEnumerator()) {
 ```
 
 ## Release
-* Not Released
+* 1.0.0
 
 
 
