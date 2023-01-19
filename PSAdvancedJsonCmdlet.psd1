@@ -4,7 +4,7 @@
     # RootModule = '.psm1'
 
     # Version number of this module.
-    ModuleVersion          = '0.0.1'
+    ModuleVersion          = '0.0.2'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -64,7 +64,7 @@
     FunctionsToExport      = @()
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport        = @('ConvertFrom-Json', 'ConvertTo-Json')
+    CmdletsToExport        = @('ConvertFrom-AdvancedJson', 'ConvertTo-AdvancedJson')
 
     # Variables to export from this module
     VariablesToExport      = '*'
@@ -118,5 +118,5 @@
     # HelpInfoURI = ''
 
     # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
-    DefaultCommandPrefix   = 'Advanced'
+    # DefaultCommandPrefix   = ''
 }

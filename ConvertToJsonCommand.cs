@@ -15,9 +15,9 @@ namespace mkht.PSAdvancedJsonCmdlet
     /// The ConvertTo-Json command.
     /// This command converts an object to a Json string representation.
     /// </summary>
-    [Cmdlet(VerbsData.ConvertTo, "Json", HelpUri = "https://go.microsoft.com/fwlink/?LinkID=2096925", RemotingCapability = RemotingCapability.None)]
+    [Cmdlet(VerbsData.ConvertTo, "AdvancedJson", HelpUri = "https://go.microsoft.com/fwlink/?LinkID=2096925", RemotingCapability = RemotingCapability.None)]
     [OutputType(typeof(string))]
-    public class ConvertToJsonCommand : PSCmdlet, IDisposable
+    public class ConvertToAdvancedJsonCommand : PSCmdlet, IDisposable
     {
         /// <summary>
         /// Gets or sets the InputObject property.

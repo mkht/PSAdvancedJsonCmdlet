@@ -11,9 +11,9 @@ namespace mkht.PSAdvancedJsonCmdlet
     /// The ConvertFrom-Json command.
     /// This command converts a Json string representation to a JsonObject.
     /// </summary>
-    [Cmdlet(VerbsData.ConvertFrom, "Json", HelpUri = "https://go.microsoft.com/fwlink/?LinkID=2096606", RemotingCapability = RemotingCapability.None)]
+    [Cmdlet(VerbsData.ConvertFrom, "AdvancedJson", HelpUri = "https://go.microsoft.com/fwlink/?LinkID=2096606", RemotingCapability = RemotingCapability.None)]
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly")]
-    public class ConvertFromJsonCommand : Cmdlet
+    public class ConvertFromAdvancedJsonCommand : Cmdlet
     {
         #region parameters
 
