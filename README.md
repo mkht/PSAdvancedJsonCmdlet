@@ -26,20 +26,20 @@ Install-Module -Name PSAdvancedJsonCmdlet
 See docs by Microsoft.  
 These have same parameters, same outputs, same usage.
 
-### + ConvertFrom-AdvancedJson
+### ConvertFrom-AdvancedJson
 https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertfrom-json?view=powershell-7.3
 
-### + ConvertTo-AdvancedJson
+### ConvertTo-AdvancedJson
 https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertto-json?view=powershell-7.3
 
 ----
 ## Notes
 
-### + Not a complete backport
+### Not a complete backport
 These commands are based on PowerShell 7.3 source code, but are not exactly the same. Full compatibility is not guaranteed.  
 For example, the PowerShell 7.3 uses `Newtonsoft.Json 13.0.2`, but this module uses `Newtonsoft.Json 12.0.3`.
 
-### + AsHashTable returns `[OrderedHashtable]` type of object
+### AsHashTable returns `[OrderedHashtable]` type of object
 `ConvertFrom-Json -AsHashtable` returns `[OrderedHashtable]`. This is the same behavior as in PS 7.3, but different from 7.2 and earlier. `[OrderedHashtable]` is not a built-in type of Windows PowerShell, it is also backported.  
 
 It is not compatible with `[System.Collections.Specialized.OrderedDictionary]`, which is commonly used in Windows PowerShell. You can clone `[OrderedHashtable]` to `[OrderedDictionary]` with the following code.
