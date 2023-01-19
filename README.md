@@ -15,7 +15,7 @@ These cmdlets are backported from modern PowerShell 7.3 to legacy Windows PowerS
 > But not useful because it has better built-in cmdlets.
 
 ## Install
-Install from PowerShellGallery
+Install from [PowerShell Gallery](https://www.powershellgallery.com/packages/PSAdvancedJsonCmdlet/)
 ```PowerShell
 Install-Module -Name PSAdvancedJsonCmdlet
 ```
